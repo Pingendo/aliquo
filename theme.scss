@@ -1,0 +1,85 @@
+ 
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,700'); 
+
+$enable-rounded:            true !default;
+$enable-shadows:            true;
+$enable-transitions:        true;
+$enable-hover-media-query:  false;
+$enable-grid-classes:       true;
+$enable-print-styles:       true;
+$enable-responsive-font-sizes:    true;
+
+
+// Variables
+//
+// Colors
+
+$theme-colors: (
+  primary: #333,
+  secondary: #111,
+  light: #f3f3f3,
+  dark: #151515,
+  info: #ccc,
+  success: #28a745,
+  warning: #ffc107,
+  danger: #dc3545
+);
+
+$body-bg: white;
+$body-color: #333;
+
+
+$body-color-inverse: invert($body-color) !default;
+$link-color: #ccc;
+
+
+// Fonts
+$font-family-base: Work Sans;
+
+$headings-font-family: $font-family-base;
+$display-font-family: $font-family-base;
+$line-height-base:  2;
+$lead-font-size:   1.30rem;
+$font-weight-normal: 300;
+$font-weight-base: $font-weight-normal;
+$headings-line-height: 1.2;
+
+
+$spacer: 1.5rem;
+
+$font-size-base: 0.9rem;
+
+$card-border-color: none;
+
+$border-radius: 0px;
+$border-radius-lg: $border-radius * 1.2;
+$border-radius-sm: $border-radius * .8;
+$border-width: 2px;
+
+
+$input-border-color: $body-bg;
+$input-box-shadow: none;
+$input-bg: map-get($theme-colors, 'light');
+
+@import 'bootstrap-4.3.1';
+
+html,body {
+   height:100%;
+}
+
+.project>.card-img-overlay{
+  visibility:hidden;
+  background:transparent;
+  transition: background .25s ease-out;
+}
+
+.project:hover>.card-img-overlay{
+  visibility:visible;
+  background:white;
+}
+ 
+
+
+.card:hover>.card-img-top {
+opacity:0.7;
+}
