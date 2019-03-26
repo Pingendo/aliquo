@@ -3,7 +3,6 @@ backend:
   branch: pi-gen # Branch to update (optional; defaults to master)
 
 media_folder: "assets/img" # Media files will be stored in the repo under images/uploads
-media_library: "assets/"
 
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
