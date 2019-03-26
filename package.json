@@ -1,0 +1,11 @@
+{
+  "name": "aliquo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Pingendo/aliquo.git",
+  "author": "GiorgioPingendo <giorgio.seregni@pingendo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "netlify-cms": "^2.8.0"
+  }
+}
