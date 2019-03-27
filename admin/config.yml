@@ -20,4 +20,4 @@ collections:
         name: "tags"
         widget: "select"
         multiple: true
-        options: ["","Sale", "Trend"]
+        options: ["Sale", "Trend"]
