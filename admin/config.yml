@@ -17,5 +17,5 @@ collections:
       - {label: "Image", name: "thumbnail", widget: "image"}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Tags",name: "tags",widget: "list",default: ["news"],fields:
-        - {label: Name, name: name, widget: string, default: "Emmet"}
+        - {label: Name, name: name, widget: string, default: "Emmet"},
         - {label: Avatar, name: avatar, widget: image, default: "/img/emmet.jpg"}}
