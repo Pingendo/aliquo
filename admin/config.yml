@@ -19,5 +19,5 @@ collections:
       - label: Tags
         name: "tags"
         widget: "select",
-        multiple: true
+        multiple: true,
         options: ["","Sale", "Trend"]
