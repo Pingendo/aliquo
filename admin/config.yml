@@ -16,7 +16,13 @@ collections:
       - {label: "Price", name: "price", widget: "number"}
       - {label: "Image", name: "thumbnail", widget: "image"}
       - {label: "Description", name: "description", widget: "markdown"}
-      - {label: "Tags",name: "tags",widget: "list",default: ["news"],
+      - label: Author
+      name: author
+      widget: object
       fields:
-        - {label: Name, name: name, widget: string, default: "Emmet"},
-        - {label: Avatar, name: avatar, widget: image, default: "/img/emmet.jpg"} }
+        - {label: Name, name: name, widget: string, default: "Emmet"}
+        - {label: Avatar, name: avatar, widget: image, default: "/img/emmet.jpg"}
+      # - {label: "Tags",name: "tags",widget: "list",default: ["news"],
+      # fields:
+      #   - {label: Name, name: name, widget: string, default: "Emmet"},
+      #   - {label: Avatar, name: avatar, widget: image, default: "/img/emmet.jpg"} }
