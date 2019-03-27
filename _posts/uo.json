@@ -1,4 +1,5 @@
 {
+  "layout": "product",
   "title": "Product2",
   "price": 20,
   "thumbnail": "/assets/img/11.jpg",
