@@ -21,8 +21,3 @@ collections:
         widget: list
         fields:
           - {label: Name, name: name, widget: string, default: "Emmet"}
-          - {label: Avatar, name: avatar, widget: image, default: "/img/emmet.jpg"}
-      # - {label: "Tags",name: "tags",widget: "list",default: ["news"],
-      # fields:
-      #   - {label: Name, name: name, widget: string, default: "Emmet"},
-      #   - {label: Avatar, name: avatar, widget: image, default: "/img/emmet.jpg"} }
