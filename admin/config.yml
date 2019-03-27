@@ -19,6 +19,6 @@ collections:
       - label: Tags
         name: "tags"
         widget: "select"
-        optional: true
+        required: false
         multiple: true
         options: ["Sale", "Trend"]
