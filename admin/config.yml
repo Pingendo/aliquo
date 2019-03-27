@@ -18,5 +18,5 @@ collections:
       - {label: "Description", name: "description", widget: "markdown"}
       - label: Tags
         name: "tags"
-        widget: "tags"
+        widget: "select"
         options: ["Sale", "Trend"]
