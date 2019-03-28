@@ -39,13 +39,13 @@
         <div class="col-md-12">
           <h1>Shop most popular</h1>
           <div class="row my-5">
-            <div ht-repeat="post in data.product | limitTo:6" class="col-lg-4 col-md-6">
-              <a href="{{post.title}}.html">
+            <div ht-repeat="product in data.product" class="col-lg-4 col-md-6">
+              <a href="{{product.title}}.html">
                 <div class="card px-5 my-3">
-                  <img class="card-img-top" src="{{post.thumbnail}}" alt="Card image cap">
+                  <img class="card-img-top" src="{{product.thumbnail}}" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">{{post.title}}</h5>
-                    <p class="card-text">${{post.price}}</p>
+                    <h5 class="card-title">{{product.title}}</h5>
+                    <p class="card-text">${{product.price}}</p>
                   </div>
                 </div>
               </a>

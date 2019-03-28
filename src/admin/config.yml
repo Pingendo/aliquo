@@ -1,0 +1,25 @@
+backend:
+  name: git-gateway
+  branch: pi-gen # Branch to update (optional; defaults to master)
+
+media_folder: "assets/img" # Media files will be stored in the repo under images/uploads
+
+collections:
+  - name: "product" # Used in routes, e.g., /admin/collections/blog
+    label: "Product" # Used in the UI
+    folder: "data/product" # The path to the folder where the documents are stored
+    format : "json"
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      # - {label: "Layout", name: "layout", widget: "hidden", default: "product"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Price", name: "price", widget: "number"}
+      - {label: "Price", name: "price", widget: "number"}
+      - {label: "Image", name: "thumbnail", widget: "image"}
+      - {label: "Description", name: "description", widget: "markdown"}
+      - label: Tags
+        name: "tags"
+        widget: "select"
+        required: false
+        multiple: true
+        options: ["Sale", "Trend"]
