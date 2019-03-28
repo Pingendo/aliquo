@@ -61,8 +61,7 @@ $input-border-color: $body-bg;
 $input-box-shadow: none;
 $input-bg: map-get($theme-colors, 'light');
 
-@import 'src/bootstrap/bootstrap-4.1.3';
-
+@import 'bootstrap-4.3.1';
 
 html,body {
    height:100%;
