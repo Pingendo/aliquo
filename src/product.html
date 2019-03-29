@@ -39,7 +39,7 @@
           <img class="img-fluid d-block mx-auto p-3" src="{{product.thumbnail}}"> </div>
         <div class="col-md-6 p-3">
           <h1 class="mb-3"> {{product.title}} </h1>
-          <p class="mb-5">${{product.price}}</p>
+          <p class="mb-5">${{product.price | number:2}}</p>
 
           <a href="#" class="btn btn-lg btn-outline-dark snipcart-add-item" data-item-id="7" data-item-name="{{product.title}}" data-item-price="{{product.price}}" data-item-url="{{product.thumbnail}}" data-item-description="A wild poster by Aliquo" data-item-image="{{product.thumbnail}}">Add to cart</a>
           <p class="my-5">{{product.description}}</p>
