@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -42,19 +42,18 @@
             <div ht-repeat="product in data.product" ht-if="product.highlight" class="col-lg-4 col-md-6">
               <a href="{{product.title}}.html">
                 <div class="card px-5 my-3">
-                  <img class="card-img-top" src="{{product.thumbnail}}" alt="Card image cap">
+                  <img class="card-img-top" src="{{product.thumbnail}}" alt="Card image cap" width="210px" height="340px">
                   <div class="card-body">
-                    <h5 class="card-title">
-                     {{product.title}}
-                      <span ht-if="product.tags && product.tags.indexOf('Sale') != -1" class="badge badge-danger">Sale</span>
-                      <span ht-if="product.tags && product.tags.indexOf('Trend') != -1" class="badge badge-success">Trend</span>
+                    <h5 class="card-title" ht-bind="product.title"> Title </h5>
+                    <h5>
+                      <span ht-if="product.tags &amp;&amp; product.tags.indexOf('Sale') != -1" class="badge badge-danger">Sale</span>
+                      <span ht-if="product.tags &amp;&amp; product.tags.indexOf('Trend') != -1" class="badge badge-success">Trend</span>
                     </h5>
-
                     <p class="card-text" ht-if="product.discount">
-                      <s class="text-muted">${{product.price}}</s> 
-                      ${{product.discount}}
+                      <s><span class="text-muted" ht-bind="product.price">$20.00</span></s>
+                      <span ht-bind="product.discount">$10</span>
                     </p>
-                    <p class="card-text" ht-if="!product.discount">${{product.price}}</p>
+                    <p class="card-text" ht-if="!product.discount" ht-bind="product.price">$20</p>
                   </div>
                 </div>
               </a>
@@ -130,13 +129,11 @@
       </div>
     </div>
   </div>
-
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="ZWM4YjMxNzgtYmM3Ni00M2JjLTkxODQtYTMwZTNiZjI0MDJjNjM2ODYzNDczNTAwOTMwNzk1"></script>
-
   <script>
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
@@ -148,6 +145,6 @@
       });
     }
   </script>
-
 </body>
+
 </html>
