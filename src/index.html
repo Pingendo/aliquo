@@ -51,7 +51,7 @@
                     </h5>
                     <p class="card-text" ht-if="product.discount">
                       <s><span class="text-muted" ht-bind="product.price">$20.00</span></s>
-                      <span ht-bind="product.discount">$10</span>
+                      <span ht-bind="'$'+product.discount">$10</span>
                     </p>
                     <p class="card-text" ht-if="!product.discount" ht-bind="product.price">$20</p>
                   </div>
