@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 
 <head>
@@ -39,69 +39,22 @@
         <div class="col-md-12">
           <h1>Shop most popular</h1>
           <div class="row my-5">
-            <div class="col-lg-4 col-md-6">
-              <a href="#">
+            <div ht-repeat="product in data.product" ht-if="product.highlight" class="col-lg-4 col-md-6">
+              <a href="{{product.title}}.html">
                 <div class="card px-5 my-3">
-                  <img class="card-img-top" src="assets/img/3.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="{{product.thumbnail}}" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">Leaves</h5>
-                    <p class="card-text">$20.00</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <a href="#">
-                <div class="card px-5 my-3">
-                  <img class="card-img-top" src="assets/img/7.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Theatre <span class="badge badge-danger">Sale</span></h5>
-                    <p class="card-text">
-                      <s class="text-muted">$20.00</s> $15.00 </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <a href="#">
-                <div class="card px-5 my-3">
-                  <img class="card-img-top" src="assets/img/14.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Vase</h5>
-                    <p class="card-text">$15.00</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <a href="#">
-                <div class="card px-5 my-3">
-                  <img class="card-img-top" src="assets/img/4.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Pool</h5>
-                    <p class="card-text">$20.00</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <a href="#">
-                <div class="card px-5 my-3">
-                  <img class="card-img-top" src="assets/img/11.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Mug</h5>
-                    <p class="card-text">$20.00</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <a href="#">
-                <div class="card px-5 my-3">
-                  <img class="card-img-top" src="assets/img/9.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Graffiti <span class="badge badge-success">Trend</span></h5>
-                    <p class="card-text">$25.00</p>
+                    <h5 class="card-title">
+                     {{product.title}}
+                      <span ht-if="product.tags && product.tags.indexOf('Sale') != -1" class="badge badge-danger">Sale</span>
+                      <span ht-if="product.tags && product.tags.indexOf('Trend') != -1" class="badge badge-success">Trend</span>
+                    </h5>
+
+                    <p class="card-text" ht-if="product.discount">
+                      <s class="text-muted">${{product.price}}</s> 
+                      ${{product.discount}}
+                    </p>
+                    <p class="card-text" ht-if="!product.discount">${{product.price}}</p>
                   </div>
                 </div>
               </a>
