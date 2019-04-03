@@ -39,7 +39,7 @@
         <div class="col-md-12">
           <h1>Shop most popular</h1>
           <div class="row my-5">
-            <div ht-repeat="product in data.product" ht-if="product.highlight" class="col-lg-4 col-md-6">
+            <div ht-repeat="product in data.products" ht-if="product.highlight" class="col-lg-4 col-md-6">
               <a href="{{product.title}}.html">
                 <div class="card px-5 my-3">
                   <img class="card-img-top" src="{{product.thumbnail}}" alt="Card image cap" width="210px" height="340px">
