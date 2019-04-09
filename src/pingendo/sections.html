@@ -1,1 +1,66 @@
-<html><head></head><body>[object Object]<div class="py-5 text-center h-100" style="background-image: url('assets/img/cover.jpg');background-size:cover;background-position:center bottom;"></div></body></html>
+<html><head></head><body>[object Object]<div class="py-5 text-center h-100" style="background-image: url('assets/img/cover.jpg');background-size:cover;background-position:center bottom;"></div><div class="py-5 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" contenteditable="true">
+          <h1>Shodsa</h1><h4 class="pi-draggable">Heading 4 <span class="badge badge-pill badge-warning">!</span></h4><p>p most popular</p>
+          <div class="row my-5">
+            <div ht-repeat="product in data.products" ht-if="product.highlight" class="col-lg-4 col-md-6" contenteditable="true">
+              <a href="{{product.title}}.html">
+                <div class="card px-5 my-3">
+                  <img class="card-img-top" src="{{product.thumbnail}}" alt="Card image cap" width="210px" height="340px">
+                  <div class="card-body">
+                    <h5 class="card-title" ht-bind="product.title"> Title </h5>
+                    <h5>
+                      <span ht-if="product.tags &amp;&amp; product.tags.indexOf('Sale') != -1" class="badge badge-danger">Sale</span>
+                      <span ht-if="product.tags &amp;&amp; product.tags.indexOf('Trend') != -1" class="badge badge-success">Trend</span>
+                    </h5>
+                    <p class="card-text" ht-if="product.discount">
+                      <s><span class="text-muted" ht-bind="product.price">$20.00</span></s>
+                      <span ht-bind="'$'+product.discount">$10</span>
+                    </p>
+                    <p class="card-text" ht-if="!product.discount" ht-bind="product.price">$20</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <a href="posters.html" class="btn btn-outline-dark btn-lg"><b>See all items</b></a>
+        </div>
+      </div>
+    </div>
+  </div><div class="">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 col-6 p-0" contenteditable="true">
+          <a href="works/birds.html">
+            <div class="card project">
+              <img class="card-img" src="assets/img/F.jpg" alt="Card image">
+              <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                <p class="m-0 lead">BIRDS</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 col-6 p-0" contenteditable="true">
+          <a href="works/typo.html">
+            <div class="card project">
+              <img class="card-img" src="assets/img/E.jpg" alt="Card image">
+              <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                <p class="m-0 lead">TYPO</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 col-6 p-0" contenteditable="true">
+          <a href="works/nature.html">
+            <div class="card project">
+              <img class="card-img" src="assets/img/C.jpg" alt="Card image">
+              <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                <p class="m-0 lead">NATURE</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div></body></html>
