@@ -1,73 +1,16 @@
-<html><head></head><body>[object Object]<div class="py-5 text-center">
+<html><head></head><body>[object Object]<div class="py-5">
     <div class="container">
       <div class="row">
-        <div class="col-md-12" contenteditable="true">
-          <h1>Sh</h1><p>dsadsa</p><p>asd</p><a class="btn btn-info pi-draggable">Info</a><p>odsa</p><h4 class="pi-draggable">Heading 4 <span class="badge badge-pill badge-warning">!</span></h4><p>p most popular</p>
-          <div class="row my-5">
-            <div ht-repeat="product in data.products" ht-if="product.highlight" class="col-lg-4 col-md-6" contenteditable="true">
-              <a href="{{product.title}}.html">
-                <div class="card px-5 my-3">
-                  <img class="card-img-top" src="{{product.thumbnail}}" alt="Card image cap" width="210px" height="340px">
-                  <div class="card-body">
-                    <h5 class="card-title" ht-bind="product.title"> Title </h5>
-                    <h5>
-                      <span ht-if="product.tags &amp;&amp; product.tags.indexOf('Sale') != -1" class="badge badge-danger">Sale</span>
-                      <span ht-if="product.tags &amp;&amp; product.tags.indexOf('Trend') != -1" class="badge badge-success">Trend</span>
-                    </h5>
-                    <p class="card-text" ht-if="product.discount">
-                      <s><span class="text-muted" ht-bind="product.price">$20.00</span></s>
-                      <span ht-bind="'$'+product.discount">$10</span>
-                    </p>
-                    <p class="card-text" ht-if="!product.discount" ht-bind="product.price">$20</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <a href="posters.html" class="btn btn-outline-dark btn-lg"><b>See all items</b></a>
-        </div>
-      </div>
-    </div>
-  </div><div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12" contenteditable="true">
-          <h1 class="text-center">Other works</h1>
-        </div>
-      </div>
-    </div>
-  </div><div class="">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4 col-6 p-0" contenteditable="true">
-          <a href="works/birds.html">
-            <div class="card project">
-              <img class="card-img" src="assets/img/F.jpg" alt="Card image">
-              <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                <p class="m-0 lead">BIRDS</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4 col-6 p-0" contenteditable="true">
-          <a href="works/typo.html">
-            <div class="card project">
-              <img class="card-img" src="assets/img/E.jpg" alt="Card image">
-              <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                <p class="m-0 lead">TYPO</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4 col-6 p-0" contenteditable="true">
-          <a href="works/nature.html">
-            <div class="card project">
-              <img class="card-img" src="assets/img/C.jpg" alt="Card image">
-              <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                <p class="m-0 lead">NATURE</p>
-              </div>
-            </div>
-          </a>
+        <div class="mx-auto col-10" contenteditable="true">
+          <h1 class="mb-4">About our work</h1><ul class="pi-draggable">
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+  </ul><p></p>
+          <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis <b>nostrud exercitation ullamco laboris nisi ut al</b>iquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+          <p class="">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+          <p class="mt-5 text-right"><b>♥ by Aliquo team</b></p>
         </div>
       </div>
     </div>
