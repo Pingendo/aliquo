@@ -6,6 +6,7 @@
   "author": "GiorgioPingendo <giorgio.seregni@pingendo.com>",
   "license": "MIT",
   "dependencies": {
+    "@11ty/eleventy": "^0.11.0",
     "netlify-cms": "^2.8.0",
     "pi-gen": "^1.0.24"
   }

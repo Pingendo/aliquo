@@ -1,3 +1,9 @@
+---
+data: products
+---
+
+
+
 <html><head><style type="text/css">
 
 
@@ -73,9 +79,15 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1>Shodsa</h1><h4 class="pi-draggable">Heading 4 <span class="badge badge-pill badge-warning">!</span></h4><p>p most popular</p>
+          <h1>Shodsa2</h1><h4 class="pi-draggable">Heading 4 <span class="badge badge-pill badge-warning">!</span></h4><p>p most popular</p>
           <div class="row my-5">
-            <div ht-repeat="product in data.products" ht-if="product.highlight" class="col-lg-4 col-md-6">
+
+          {% for key , val in products %}
+            {{ val.title }}
+          {% endfor %}
+
+
+            <div pi-repeat="product in products"  class="col-lg-4 col-md-6">
               <a href="{{product.title}}.html">
                 <div class="card px-5 my-3">
                   <img class="card-img-top" src="{{product.thumbnail}}" alt="Card image cap" width="210px" height="340px">
