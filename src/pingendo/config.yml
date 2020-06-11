@@ -1,4 +1,6 @@
+index_path: "src/index.html"
 sources_path : "src/"
-index_path: src/index.html
 netlify_site_name : aliquo
 production_branch : master
+# editable_selector : "a, p, h1,h2,h3,h4,h5, button,ul,li"
+has_components : true
