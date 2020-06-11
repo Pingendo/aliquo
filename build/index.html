@@ -1,189 +1,361 @@
 
+<!DOCTYPE html>
+<html><head>
+    <style type="text/css">
 
+      .p_insertion:before {
+        content: 'click here to add';
+        color: white;
+      }
 
-<html><head><style type="text/css">
+      .p_insertion {
+        min-height: 80px !important;
+        height: 80px !important;
+        border-style: none;
+        background-color: white !important;
+        color: white;
+        text-align: center;
+        pointer-events: none;
+      }
 
+      .editable:focus {
+        outline: none !important;
+      }
 
-                              .p_insertion:before {
-                                content:'click here to add';
-                                color: white;
-                              }
+      .editable:hover {
+        cursor: pointer;
+      }
 
-                              .p_insertion {
-                                min-height:80px !important;
-                                height:80px !important;
-                                border-style: none;
-                                background-color: white !important;
-                                color: white;
-                                text-align: center;
-                                pointer-events: none;
-                              }
+      .structure > * * {
+        pointer-events: none !important;
+      }
 
-                              .editable:focus {
-                                outline: none !important;
-                              }
+      .h-100 {
+        max-height: 80%;
+      }
 
-                              .editable:hover {
-                                cursor: pointer;
-                              }
+      div:empty,
+      p:empty {
+        min-width: 100%;
+        min-height: 40px;
+        background: #aaa;
+      }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="theme.css" type="text/css">
+    <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet">
+    <link rel="icon" href="assets/img/favicon.png">
+    <title>Aliquo - Poster Shop</title>
+  </head>
 
-                              .structure > * * {
-                                pointer-events: none !important;
-                              }
-
-                              .h-100 {
-                                max-height:80%;
-                              }
-
-                              div:empty, p:empty {
-                                min-width: 100%;
-                                min-height: 40px;
-                                background: #aaa;
-                              }
-                          </style>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="stylesheet" href="theme.css" type="text/css">
-  <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet">
-  <link rel="icon" href="assets/img/favicon.png">
-  <title>Aliquo - Poster Shop</title>
-</head>
-
-<body class>
-  <nav class="navbar navbar-expand-md navbar-light">
-    <div class="container">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-      <div class="collapse navbar-collapse text-center justify-content-between" id="navbar2SupportedContent">
-        <a class="navbar-brand mr-0" href="index.html"><b class="text-muted">Aliquo</b></a>
-        <ul class="navbar-nav">
-          <li class="nav-item mx-3">
-            <a class="nav-link" href="about.html"> ABOUT</a>
-          </li>
-          <li class="nav-item mx-3">
-            <a class="nav-link" href="posters.html"> SHOP</a>
-          </li>
-          <li class="nav-item mx-3">
-            <a class="nav-link" href="contact.html">CONTACT</a>
-          </li>
-        </ul>
-        <a href="#" class="btn navbar-btn text-muted snipcart-checkout"><i class="fa d-inline fa-lg fa-shopping-cart"></i></a>
+  <body class>
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center justify-content-between" id="navbar2SupportedContent">
+          <a class="navbar-brand mr-0" href="index.html">
+            <b class="text-muted">Aliquo</b>
+          </a>
+          <ul class="navbar-nav">
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="about.html"> ABOUT</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="posters.html"> SHOP</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+          <a href="#" class="btn navbar-btn text-muted snipcart-checkout">
+            <i class="fa d-inline fa-lg fa-shopping-cart"></i>
+          </a>
+        </div>
       </div>
-    </div>
-  </nav>
-  <div class="py-5 text-center h-100" style="background-image: url(&apos;assets/img/cover.jpg&apos;);background-size:cover;background-position:center bottom;"></div>
-  <div class="py-5 text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1>Shodsa2</h1><h4 class="pi-draggable">Heading 4 <span class="badge badge-pill badge-warning">!</span></h4><p>p most popular</p>
-          <div class="row my-5">
+    </nav>
+    <div class="py-5 text-center h-100" style="background-image: url('assets/img/cover.jpg');background-size:cover;background-position:center bottom;"></div>
+    <div class="py-5 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Shodsa2</h1>
+            <h4 class="pi-draggable">Heading 4 <span class="badge badge-pill badge-warning">!</span></h4>
+            <p>p most popular</p>
+            <div class="row my-5">
 
 
-          
-            Shoemaker
-          
-            Graffiti
-          
-            Leaves
-          
-            Lighthouse
-          
-            Mug
-          
-            Pool
-          
-            Jungle
-          
-            Storm
-          
-            Stripe
-          
-            Swimg
-          
-            Theatre
-          
-            Vase
-          
+              <div class="col-lg-4 col-md-6">
+                <a href="Shoemaker.html">
+                  <div class="card px-5 my-3">
+                    <img class="card-img-top" src="/assets/img/12.jpg" alt="Card image cap" width="210px" height="340px">
+                    <div class="card-body">
+                      <h5 class="card-title">Shoemaker</h5>
 
+                      
+                      
 
-            
+                      
+                      <p class="card-text">$20</p>
+                    </div>
+                  </div>
+                </a>
+              </div><div class="col-lg-4 col-md-6">
+                <a href="Graffiti.html">
+                  <div class="card px-5 my-3">
+                    <img class="card-img-top" src="/assets/img/9.jpg" alt="Card image cap" width="210px" height="340px">
+                    <div class="card-body">
+                      <h5 class="card-title">Graffiti</h5>
+
+                      
+                      <h5><span class="badge badge-success">Trend</span></h5>
+
+                      
+                      <p class="card-text">$25</p>
+                    </div>
+                  </div>
+                </a>
+              </div><div class="col-lg-4 col-md-6">
+                <a href="Leaves.html">
+                  <div class="card px-5 my-3">
+                    <img class="card-img-top" src="/assets/img/3.jpg" alt="Card image cap" width="210px" height="340px">
+                    <div class="card-body">
+                      <h5 class="card-title">Leaves</h5>
+
+                      
+                      
+
+                      
+                      <p class="card-text">$20</p>
+                    </div>
+                  </div>
+                </a>
+              </div><div class="col-lg-4 col-md-6">
+                <a href="Lighthouse.html">
+                  <div class="card px-5 my-3">
+                    <img class="card-img-top" src="/assets/img/8.jpg" alt="Card image cap" width="210px" height="340px">
+                    <div class="card-body">
+                      <h5 class="card-title">Lighthouse</h5>
+
+                      
+                      
+
+                      
+                      <p class="card-text">$20</p>
+                    </div>
+                  </div>
+                </a>
+              </div><div class="col-lg-4 col-md-6">
+                <a href="Mug.html">
+                  <div class="card px-5 my-3">
+                    <img class="card-img-top" src="/assets/img/11.jpg" alt="Card image cap" width="210px" height="340px">
+                    <div class="card-body">
+                      <h5 class="card-title">Mug</h5>
+
+                      
+                      
+
+                      
+                      <p class="card-text">$20</p>
+                    </div>
+                  </div>
+                </a>
+              </div><div class="col-lg-4 col-md-6">
+                <a href="Pool.html">
+                  <div class="card px-5 my-3">
+                    <img class="card-img-top" src="/assets/img/4.jpg" alt="Card image cap" width="210px" height="340px">
+                    <div class="card-body">
+                      <h5 class="card-title">Pool</h5>
+
+                      
+                      
+
+                      
+                      <p class="card-text">$20</p>
+                    </div>
+                  </div>
+                </a>
+              </div><div class="col-lg-4 col-md-6">
+                <a href="Jungle.html">
+                  <div class="card px-5 my-3">
+                    <img class="card-img-top" src="/assets/img/1.jpg" alt="Card image cap" width="210px" height="340px">
+                    <div class="card-body">
+                      <h5 class="card-title">Jungle</h5>
+
+                      
+                      <h5><span class="badge badge-success">Trend</span></h5>
+
+                      
+                      <p class="card-text">$20</p>
+                    </div>
+                  </div>
+                </a>
+              </div><div class="col-lg-4 col-md-6">
+                <a href="Storm.html">
+                  <div class="card px-5 my-3">
+                    <img class="card-img-top" src="/assets/img/15.jpg" alt="Card image cap" width="210px" height="340px">
+                    <div class="card-body">
+                      <h5 class="card-title">Storm</h5>
+
+                      
+                      
+
+                      
+                      <p class="card-text">$20</p>
+                    </div>
+                  </div>
+                </a>
+              </div><div class="col-lg-4 col-md-6">
+                <a href="Stripe.html">
+                  <div class="card px-5 my-3">
+                    <img class="card-img-top" src="/assets/img/16.jpg" alt="Card image cap" width="210px" height="340px">
+                    <div class="card-body">
+                      <h5 class="card-title">Stripe</h5>
+
+                      
+                      
+
+                      
+                      <p class="card-text">$2003</p>
+                    </div>
+                  </div>
+                </a>
+              </div><div class="col-lg-4 col-md-6">
+                <a href="Swimg.html">
+                  <div class="card px-5 my-3">
+                    <img class="card-img-top" src="/assets/img/5.jpg" alt="Card image cap" width="210px" height="340px">
+                    <div class="card-body">
+                      <h5 class="card-title">Swimg</h5>
+
+                      
+                      
+
+                      
+                      <p class="card-text">$20</p>
+                    </div>
+                  </div>
+                </a>
+              </div><div class="col-lg-4 col-md-6">
+                <a href="Theatre.html">
+                  <div class="card px-5 my-3">
+                    <img class="card-img-top" src="/assets/img/7.jpg" alt="Card image cap" width="210px" height="340px">
+                    <div class="card-body">
+                      <h5 class="card-title">Theatre</h5>
+
+                      <h5><span class="badge badge-danger"> Sale</span> </h5>
+                      
+
+                      <p class="card-text">
+                        <s> <span class="text-muted">20</span></s>
+                        <span>$15</span>
+                      </p>
+                      
+                    </div>
+                  </div>
+                </a>
+              </div><div class="col-lg-4 col-md-6">
+                <a href="Vase.html">
+                  <div class="card px-5 my-3">
+                    <img class="card-img-top" src="/assets/img/14.jpg" alt="Card image cap" width="210px" height="340px">
+                    <div class="card-body">
+                      <h5 class="card-title">Vase</h5>
+
+                      
+                      
+
+                      
+                      <p class="card-text">$15</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <a href="posters.html" class="btn btn-outline-dark btn-lg">
+              <b>See all items</b>
+            </a>
           </div>
-          <a href="posters.html" class="btn btn-outline-dark btn-lg"><b>See all items</b></a>
         </div>
       </div>
     </div>
-  </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="text-center">Other works</h1>
+    <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">Other works</h1>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4 col-6 p-0">
-          <a href="works/birds.html">
-            <div class="card project">
-              <img class="card-img" src="assets/img/F.jpg" alt="Card image">
-              <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                <p class="m-0 lead">BIRDS</p>
+    <div class>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 col-6 p-0">
+            <a href="works/birds.html">
+              <div class="card project">
+                <img class="card-img" src="assets/img/F.jpg" alt="Card image">
+                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                  <p class="m-0 lead">BIRDS</p>
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4 col-6 p-0">
-          <a href="works/typo.html">
-            <div class="card project">
-              <img class="card-img" src="assets/img/E.jpg" alt="Card image">
-              <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                <p class="m-0 lead">TYPO</p>
+            </a>
+          </div>
+          <div class="col-md-4 col-6 p-0">
+            <a href="works/typo.html">
+              <div class="card project">
+                <img class="card-img" src="assets/img/E.jpg" alt="Card image">
+                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                  <p class="m-0 lead">TYPO</p>
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4 col-6 p-0">
-          <a href="works/nature.html">
-            <div class="card project">
-              <img class="card-img" src="assets/img/C.jpg" alt="Card image">
-              <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                <p class="m-0 lead">NATURE</p>
+            </a>
+          </div>
+          <div class="col-md-4 col-6 p-0">
+            <a href="works/nature.html">
+              <div class="card project">
+                <img class="card-img" src="assets/img/C.jpg" alt="Card image">
+                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                  <p class="m-0 lead">NATURE</p>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row justify-content-center text-center mb-4">
-        <div class="col-4 align-self-center col-md-1">
-          <a href="#"><i class="fab fa-fw fa-facebook text-muted fa-2x"></i></a>
+    <div class="py-5">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-4">
+          <div class="col-4 align-self-center col-md-1">
+            <a href="#">
+              <i class="fab fa-fw fa-facebook text-muted fa-2x"></i>
+            </a>
+          </div>
+          <div class="col-4 align-self-center col-md-1">
+            <a href="#">
+              <i class="fab fa-fw fa-twitter text-muted fa-2x"></i>
+            </a>
+          </div>
+          <div class="col-4 align-self-center col-md-1">
+            <a href="#">
+              <i class="fab fa-fw fa-instagram text-muted fa-2x"></i>
+            </a>
+          </div>
         </div>
-        <div class="col-4 align-self-center col-md-1">
-          <a href="#"><i class="fab fa-fw fa-twitter text-muted fa-2x"></i></a>
-        </div>
-        <div class="col-4 align-self-center col-md-1">
-          <a href="#"><i class="fab fa-fw fa-instagram text-muted fa-2x"></i></a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 mt-3 text-center">
-          <p>&#xA9; Copyright 2019 Pingendo - All rights reserved.</p>
+        <div class="row">
+          <div class="col-md-12 mt-3 text-center">
+            <p>© Copyright 2019 Pingendo - All rights reserved.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="ZWM4YjMxNzgtYmM3Ni00M2JjLTkxODQtYTMwZTNiZjI0MDJjNjM2ODYzNDczNTAwOTMwNzk1"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="ZWM4YjMxNzgtYmM3Ni00M2JjLTkxODQtYTMwZTNiZjI0MDJjNjM2ODYzNDczNTAwOTMwNzk1"></script>
 
-
+  
 </body></html>

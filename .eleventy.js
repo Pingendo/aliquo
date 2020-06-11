@@ -3,9 +3,7 @@ const pluginPingendo = require("pingendo-11ty");
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginPingendo);
   eleventyConfig.setDataDeepMerge(true);
-
-
-  eleventyConfig.addCollection("tagList", require("./getTagList"));
+  eleventyConfig.setDynamicPermalinks(true);
 
   return {
     templateFormats: [
