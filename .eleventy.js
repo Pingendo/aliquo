@@ -5,6 +5,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.setDynamicPermalinks(true);
 
+  eleventyConfig.addPassthroughCopy("src/admin");
+  eleventyConfig.addPassthroughCopy("src/pingendo/**");
+
+
   return {
     templateFormats: [
       "md",
