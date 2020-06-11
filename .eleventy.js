@@ -4,7 +4,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginPingendo);
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.setDynamicPermalinks(true);
-
   eleventyConfig.addPassthroughCopy("src/admin");
   eleventyConfig.addPassthroughCopy("src/pingendo/**");
 
@@ -14,7 +13,8 @@ module.exports = function(eleventyConfig) {
       "md",
       "njk",
       "html",
-      "liquid"
+      "liquid",
+      "css"
     ],
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
