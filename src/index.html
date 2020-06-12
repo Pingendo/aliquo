@@ -68,7 +68,7 @@ data: products
             <li class="nav-item mx-3">
               <a class="nav-link" href="about.html"> ABOUT</a>
             </li>
-            <li class="nav-item mx-3">
+            <li class="nav-item mx-3" pi-selection="true">
               <a class="nav-link" href="posters.html"> SHOP</a>
             </li>
             <li class="nav-item mx-3">
@@ -102,7 +102,7 @@ data: products
                       <h5 pi-if=" product.tags and product.tags.includes('Sale') "><span class="badge badge-danger"> Sale</span> </h5>
                       <h5 pi-if=" product.tags and product.tags.includes('Trend') "><span class="badge badge-success">Trend</span></h5>
 
-                      <p class="card-text" pi-if="product.discount">
+                      <p class="card-text" pi-if="product.discount" style="opacity: 0.5;">
                         <s> <span class="text-muted" pi-bind="product.price">$.00</span></s>
                         <span pi-bind="'$'+product.discount">$10</span>
                       </p>
