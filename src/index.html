@@ -1,10 +1,10 @@
----
+<html><head></head><body class="">---
 data: products
 ---
 
-<!DOCTYPE html>
-<html>
-  <head>
+
+
+  
     <style type="text/css">
 
       .p_insertion:before {
@@ -52,9 +52,9 @@ data: products
     <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet">
     <link rel="icon" href="assets/img/favicon.png">
     <title>Aliquo - Poster Shop</title>
-  </head>
+  
 
-  <body class="">
+  
     <nav class="navbar navbar-expand-md navbar-light">
       <div class="container">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,10 +65,10 @@ data: products
             <b class="text-muted">Aliquo</b>
           </a>
           <ul class="navbar-nav">
-            <li class="nav-item mx-3">
+            <li class="nav-item mx-3" pi-selection="true" ht-bind="products.title">
               <a class="nav-link" href="about.html"> ABOUT</a>
             </li>
-            <li class="nav-item mx-3" pi-selection="true">
+            <li class="nav-item mx-3">
               <a class="nav-link" href="posters.html"> SHOP</a>
             </li>
             <li class="nav-item mx-3">
@@ -88,18 +88,18 @@ data: products
           <div class="col-md-12">
             <h1>Shodsa2</h1>
             <h4 class="pi-draggable">Heading 4 <span class="badge badge-pill badge-warning">!</span></h4>
-            <p>p most popular</p>
+            <p style="opacity: 0.5;">p most popular</p>
             <div class="row my-5">
 
 
-              <div pi-repeat="key,product in products"  class="col-lg-4 col-md-6">
+              <div pi-repeat="key,product in products" class="col-lg-4 col-md-6">
                 <a href="{{product.title}}.html">
                   <div class="card px-5 my-3">
                     <img class="card-img-top" src="{{product.thumbnail}}" alt="Card image cap" width="210px" height="340px">
                     <div class="card-body">
                       <h5 class="card-title" pi-bind="product.title"> Title </h5>
 
-                      <h5 pi-if=" product.tags and product.tags.includes('Sale') " ><span class="badge badge-danger"> Sale</span> </h5>
+                      <h5 pi-if=" product.tags and product.tags.includes('Sale') "><span class="badge badge-danger"> Sale</span> </h5>
                       <h5 pi-if=" product.tags and product.tags.includes('Trend') "><span class="badge badge-success">Trend</span></h5>
 
                       <p class="card-text" pi-if="product.discount" style="opacity: 0.5;">
@@ -196,5 +196,5 @@ data: products
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="ZWM4YjMxNzgtYmM3Ni00M2JjLTkxODQtYTMwZTNiZjI0MDJjNjM2ODYzNDczNTAwOTMwNzk1"></script>
 
-  </body>
-</html>
+  
+</body></html>
