@@ -70,7 +70,7 @@ data: products
             <li class="nav-item mx-3" ht-bind="products.title">
               <a class="nav-link" href="about.html"> ABOUT</a>
             </li>
-            <li class="nav-item mx-3" pi-selection="true">
+            <li class="nav-item mx-3">
               <a class="nav-link" href="posters.html"> SHOP</a>
             </li>
             <li class="nav-item mx-3">
@@ -96,7 +96,7 @@ data: products
 
               <div pi-repeat="key,product in products" class="col-lg-4 col-md-6">
                 <a href="{{product.title}}.html">
-                  <div class="card px-5 my-3" pi-repeat="product in products">
+                  <div class="card px-5 my-3" pi-repeat="product in products" pi-selection="true">
                     <img class="card-img-top" src="{{product.thumbnail}}" alt="Card image cap" width="210px" height="340px">
                     <div class="card-body">
                       <h5 class="card-title" pi-bind="product.title"> Title </h5>
