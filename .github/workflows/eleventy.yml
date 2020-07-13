@@ -11,9 +11,9 @@ jobs:
 
     runs-on: ubuntu-latest
 
-
+    
     steps:
     - uses: actions/checkout@v2
     - name: Build the site in the jekyll/builder container
       run: |
-        npx @11ty/eleventy --input="src/product.html" 
+        npm install -g pingendo-11ty && npx @11ty/eleventy --input="src/product.html" 
