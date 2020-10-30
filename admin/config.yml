@@ -9,7 +9,7 @@ collections:
   - name: "magliette" # Used in routes, e.g., /admin/collections/blog
     label: "magliette" # Used in the UI
     folder: "products" # The path to the folder where the documents are stored
-    format : "json"
+    format : "md"
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
       # - {label: "Layout", name: "layout", widget: "hidden", default: "product"}
@@ -29,7 +29,7 @@ collections:
   - name: "products" # Used in routes, e.g., /admin/collections/blog
     label: "Product" # Used in the UI
     folder: "magliette" # The path to the folder where the documents are stored
-    format : "json"
+    format : "md"
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
       # - {label: "Layout", name: "layout", widget: "hidden", default: "product"}
@@ -39,10 +39,10 @@ collections:
       - {label: "Highlight", name: "highlight", widget: "boolean", default: false, required: false }
       - {label: "Image", name: "thumbnail", widget: "image"}
       - {label: "Description", name: "description", widget: "markdown"}
-      - label: "Gallery", 
-        name: "galleryImages", 
-        widget: "list", 
-        summary: '{{fields.image}}',
+      - label: "Gallery"
+        name: "galleryImages"
+        widget: "list"
+        summary: '{{fields.image}}'
         field: {label: Image, name: image, widget: string}
       - label: Tags
         name: "tags"
