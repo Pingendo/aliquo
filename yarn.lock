@@ -3345,10 +3345,10 @@ pify@^2.0.0, pify@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/pify/-/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
 
-pingendo-11ty@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/pingendo-11ty/-/pingendo-11ty-1.0.2.tgz#74c7a5dd73e07552e2dc47d904f95bdc0f66f3f4"
-  integrity sha512-35KVrAJDS2ZfENW+fW4IpXTTMcveCYrmTXskldMU+1IYzSGS7IwSVEGEmVViVSvpeSbV2fWpLltYQTCIYoVbCA==
+pingendo-11ty@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/pingendo-11ty/-/pingendo-11ty-1.0.8.tgz#a7e2514b94cba202281ad4aa6c23fc8c0d311c28"
+  integrity sha512-py8Ruja0fAvHOzXMevpXJHDRmxpKfZTkFJp32Dsx7MhHme6asj1vsKJPaKpsEevcXLj9iNUfkqkFGw4ZadCqiw==
   dependencies:
     cheerio "^1.0.0-rc.3"
 
