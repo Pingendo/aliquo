@@ -10,6 +10,7 @@ description: Describe your product. Lorem ipsum dolor sit amet, consectetur
   amet rutrum magna efficitur et. Quisque cursus fringilla arcu sed semper.
 tags:
   - Sale
+  - Trend
 layout: product
 type: Trend
 galleryImages:
